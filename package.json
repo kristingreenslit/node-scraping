@@ -1,8 +1,10 @@
 {
- "name" : "webScraper",
- "version" : "0.0.1",
- "dependencies" : {
-     "request"    : "latest",
-     "cheerio"    : "latest"
+  "name"         : "webScraper",
+  "version"      : "0.0.1",
+  "main"         : "server.js",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest"
   }
 }
