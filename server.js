@@ -4,7 +4,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
 
-app.get('/scrape', function(req, res) {
+app.get('/pen', function(req, res) {
 
     url = 'http://www.staples.com/uni-ball-Roller-Pens-Micro-Point-Black-Dozen/product_132522';
 
@@ -29,8 +29,8 @@ app.get('/scrape', function(req, res) {
         fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err) {
             console.log('file successfully written, check output.json');
         })
-        // message in browser as a reminder that app does not yet have a UI
-        res.send('check console')
+        // TODO: build out UI
+        res.send('The uni-ball&#174; Roller Pen (Micro Point, Black) can be found at: ' + url);
     });
 })
 
